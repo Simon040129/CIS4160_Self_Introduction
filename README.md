@@ -46,23 +46,3 @@ streamlit run homepage.py
 ```
 
 3. Open the link shown in the terminal (usually http://localhost:8501).
-
-
-## Github Structure
-flowchart LR
-  subgraph Remote[GitHub: origin]
-    RMAIN[remote branch: main]
-  end
-
-  subgraph Local[Local Repo]
-    OMAIN[remote-tracking: origin/main]
-    LMAIN[local branch: main]
-    HEAD[HEAD -> main]
-  end
-
-  WD[Working Directory] --- IDX[Staging Area (Index)] --- LMAIN
-
-  RMAIN <-- push --- LMAIN
-  RMAIN -. fetch .-> OMAIN
-  OMAIN -. pull/merge/rebase .-> LMAIN
-  HEAD --> LMAIN

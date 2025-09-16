@@ -11,10 +11,8 @@ st.set_page_config(page_title="Yiming Wei · Self Intro", page_icon="📈", layo
 # Lightweight style, compress top whitespace & control max image width
 st.markdown("""
 <style>
-/* 去一点顶部留白 */
 /* Remove some top whitespace */
 section.main > div:first-child { padding-top: 1rem; }
-/* 右侧栏内容行距更紧凑 */
 /* Make right sidebar content line spacing more compact */
 .small p { margin: 0.25rem 0; }
 </style>
